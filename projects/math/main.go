@@ -1,7 +1,14 @@
-package main
+// Функция для нахождения массы
+func M() float64 {
+	return p * v
+}
 
-import "fmt"
+// Функция для нахождения циклической частоты
+func W() float64 {
+	return math.Sqrt(k / M())
+}
 
-func main() {
-	fmt.Println("Hello, world!!!")
+// Функция для нахождения периода колебаний
+func T() float64 {
+	return 6 / W()
 }

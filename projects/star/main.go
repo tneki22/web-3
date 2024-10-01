@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
+
+func addStars(s string) string {
+	return strings.Join(strings.Split(s, ""), "*")
+}
 
 func main() {
-	fmt.Println("Hello, world!!!")
+	var input string
+	fmt.Scan(&input)
+	fmt.Println(addStars(input))
 }
